@@ -1,0 +1,55 @@
+$primary: rgba(100, 144, 192, 0.8);
+$secondary: #6c757d;
+$success: rgba(109, 179, 125, 0.8);
+$danger: rgba(175, 40, 54, 0.8);
+$warning: rgba(184, 151, 53, 0.8);
+$info: #17a2b8;
+$light: #f8f9fa;
+$dark: #343a40;
+
+$border-radius: 0 !important;
+$btn-border-radius: $border-radius;
+
+$form-check-input-checked-bg-color: $success;
+$form-check-input-checked-border-color: $success;
+
+
+:root,
+body {
+    height: 100%;
+}
+
+#root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+// override react-select styles
+.css-13cymwt-control {
+    border-radius: $border-radius;
+    box-shadow: none !important;
+    border: 1px solid #ced4da !important;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+}
+
+.css-t3ipsp-control {
+    border-radius: $border-radius;
+    box-shadow: none !important;
+    border: 1px solid #ced4da !important;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    &:hover {
+        border-color: #ced4da !important;
+        box-shadow: 0 0 0 0.25rem rgba(100, 144, 192, 0.25) !important;
+    }
+}
+
+.css-1nmdiq5-menu {
+    border-radius: $border-radius;
+}
+
+
+// Import Bootstrap after variable overrides
+@import '../../node_modules/bootstrap/scss/bootstrap';
