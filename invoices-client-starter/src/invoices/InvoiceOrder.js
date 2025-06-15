@@ -1,6 +1,6 @@
 import React from "react";
 
-const ORDER_OPTIONS = [
+const orderOptions = [
   { label: "Id", value: "id" },
   { label: "Číslo faktury", value: "invoice_number" },
   { label: "Datum výstavení", value: "issued" },
@@ -22,7 +22,7 @@ const InvoiceOrder = ({ currentOrdering, setOrdering }) => {
         Uspořádat
       </a>
       <ul className="dropdown-menu">
-        {ORDER_OPTIONS.map(({ label, value }) => (
+        {orderOptions.map(({ label, value }) => (
           <React.Fragment key={value}>
             <li>
               <button
